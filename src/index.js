@@ -20,11 +20,18 @@ export const createElement = h;
 Grid.prototype.mount = function(selector){
 
     var obj = this,
-        target = document.querySelector(selector),
+        target = typeof selector == 'string' ? document.querySelector(selector) : selector,
         container = document.createElement('div'),
         placeholder = document.createElement('div');
 
-    target.parentNode.replaceChild(placeholder, target);
+    if (!target){
+        target = document.createElement('div');
+    }
+
+    if (target.parentNode){
+        target.parentNode.replaceChild(placeholder, target);
+    }
+
     container.appendChild(target);
 
     class Proxy extends Component {
@@ -37,7 +44,11 @@ Grid.prototype.mount = function(selector){
     function swap(ref){
         if (ref) {
             target = container.firstChild;
-            placeholder.parentNode.replaceChild(target, placeholder);
+
+            if (placeholder.parentNode){
+                placeholder.parentNode.replaceChild(target, placeholder);
+            }
+
             container.appendChild(placeholder);
         }
         else {
@@ -49,6 +60,8 @@ Grid.prototype.mount = function(selector){
     hydrate(h(Proxy, {ref:swap}), container);
 
     this.$ROOT = container;
+
+    return target;
 };
 
 
