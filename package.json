@@ -4,11 +4,13 @@
   "description": "Datagrid component (no framework)",
   "author": "webmaster@activewidgets.com",
   "license": "MIT",
-  "main": "./index.common.js",
-  "module": "./index.esm.js",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.esm.js",
+  "es2015": "./index.js",
   "files": [
+    "css",
     "dist",
-    "index.*.js",
+    "index.js",
     "LICENSE",
     "README.md"
   ],
@@ -21,10 +23,12 @@
     "test": "jest"
   },
   "dependencies": {
-    "@activewidgets/frameworks": "https://cdn.activewidgets.com/packages/frameworks-0.0.4.tgz",
-    "@activewidgets/grid": "https://cdn.activewidgets.com/packages/grid-0.0.4.tgz",
-    "inferno": "^5.0.5",
-    "inferno-create-element": "^5.0.5"
+    "@activewidgets/frameworks": "https://cdn.activewidgets.com/packages/frameworks-0.0.5.tgz",
+    "@activewidgets/grid": "https://cdn.activewidgets.com/packages/grid-0.0.5.tgz",
+    "inferno": "^7.0.0",
+    "inferno-clone-vnode": "^7.0.0",
+    "inferno-create-element": "^7.0.0",
+    "inferno-hydrate": "^7.0.0"
   },
   "devDependencies": {
     "@storybook/html": "^4.0.0-alpha.6",

@@ -2,15 +2,17 @@
 import babel from 'rollup-plugin-babel';
 
 export default {
-    input: 'src/index.js',
+    input: 'index.js',
     output: [
-        {file: 'dist/common.js', format: 'cjs', sourcemap: true, exports: 'named'},
-        {file: 'dist/esm.js', format: 'es', sourcemap: true}
+        {file: 'dist/index.umd.js', format: 'umd', sourcemap: true, name: 'AX', exports: 'named'},
+        {file: 'dist/index.esm.js', format: 'es', sourcemap: true}
     ],
     external: [
         'inferno',
+        'inferno-clone-vnode',
         'inferno-create-element',
-        '@activewidgets/frameworks',
+        'inferno-hydrate',
+        '@activewidgets/frameworks/inferno',
         '@activewidgets/grid'
     ],
     plugins: [
