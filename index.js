@@ -3,11 +3,11 @@ import {Component} from 'inferno';
 import {cloneVNode} from 'inferno-clone-vnode';
 import {createElement} from 'inferno-create-element';
 import {hydrate} from 'inferno-hydrate';
-import AX from '@activewidgets/frameworks/inferno';
+import framework from '@activewidgets/frameworks/inferno';
 import {grid} from '@activewidgets/grid';
 
 
-let {component} = AX({Component, createElement, cloneVNode});
+let {component} = framework({Component, createElement, cloneVNode});
 
 
 function mount(source, props){

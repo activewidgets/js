@@ -4,9 +4,8 @@
   "description": "Datagrid component (no framework)",
   "author": "webmaster@activewidgets.com",
   "license": "MIT",
-  "main": "./dist/index.umd.js",
-  "module": "./dist/index.esm.js",
-  "es2015": "./index.js",
+  "main": "./dist/ax-html.js",
+  "module": "./dist/ax-html.esm.js",
   "files": [
     "css",
     "dist",
