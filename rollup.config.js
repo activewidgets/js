@@ -6,8 +6,7 @@ let globals = {
     'inferno': 'Inferno',
     'inferno-clone-vnode': 'Inferno',
     'inferno-create-element': 'Inferno',
-    'inferno-hydrate': 'Inferno',
-    '@activewidgets/frameworks/inferno': 'AX.frameworks.inferno',
+    '@activewidgets/frameworks/html': 'AX.frameworks.html',
     '@activewidgets/grid': 'AX.components'
 };
 
@@ -21,8 +20,7 @@ export default {
         'inferno',
         'inferno-clone-vnode',
         'inferno-create-element',
-        'inferno-hydrate',
-        '@activewidgets/frameworks/inferno',
+        '@activewidgets/frameworks/html',
         '@activewidgets/grid'
     ],
     plugins: [
