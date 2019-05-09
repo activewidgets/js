@@ -6,14 +6,14 @@ let globals = {
     'inferno': 'Inferno',
     'inferno-clone-vnode': 'Inferno',
     'inferno-create-element': 'Inferno',
-    '@activewidgets/frameworks/html': 'AX.frameworks.html',
-    '@activewidgets/grid': 'AX.components'
+    '@activewidgets/frameworks/html': 'ActiveWidgets.frameworks.html',
+    '@activewidgets/grid': 'ActiveWidgets.components'
 };
 
 export default {
     input: 'index.js',
     output: [
-        {file: 'dist/ax-html.js', format: 'umd', sourcemap: true, name: 'AX.HTML', extend: true, globals},
+        {file: 'dist/ax-html.js', format: 'umd', sourcemap: true, name: 'ActiveWidgets.HTML', extend: true, globals},
         {file: 'dist/ax-html.esm.js', format: 'esm', sourcemap: true}
     ],
     external: [
