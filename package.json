@@ -24,10 +24,7 @@
   "dependencies": {
     "@activewidgets/frameworks": "https://cdn.activewidgets.com/packages/frameworks-0.0.5.tgz",
     "@activewidgets/grid": "https://cdn.activewidgets.com/packages/grid-0.0.5.tgz",
-    "inferno": "^7.0.0",
-    "inferno-clone-vnode": "^7.0.0",
-    "inferno-create-element": "^7.0.0",
-    "inferno-hydrate": "^7.0.0"
+    "preact": "^10.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

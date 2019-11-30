@@ -3,9 +3,7 @@ import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
 
 let globals = {
-    'inferno': 'Inferno',
-    'inferno-clone-vnode': 'Inferno',
-    'inferno-create-element': 'Inferno',
+    'preact': 'preact',
     '@activewidgets/frameworks/html': 'ActiveWidgets.frameworks.html',
     '@activewidgets/grid': 'ActiveWidgets.components'
 };
@@ -17,9 +15,7 @@ export default {
         {file: 'dist/ax-html.esm.js', format: 'esm', sourcemap: true}
     ],
     external: [
-        'inferno',
-        'inferno-clone-vnode',
-        'inferno-create-element',
+        'preact',
         '@activewidgets/frameworks/html',
         '@activewidgets/grid'
     ],
