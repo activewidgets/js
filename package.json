@@ -1,11 +1,11 @@
 {
-  "name": "@activewidgets/html",
+  "name": "@activewidgets/js",
   "version": "0.0.5",
   "description": "Datagrid component (no framework)",
   "author": "webmaster@activewidgets.com",
   "license": "MIT",
-  "main": "./dist/ax-html.js",
-  "module": "./dist/ax-html.esm.js",
+  "main": "./dist/ax-js.js",
+  "module": "./dist/ax-js.esm.js",
   "files": [
     "css",
     "dist",

@@ -1,6 +1,6 @@
 
 import * as preact from 'preact';
-import framework from '@activewidgets/frameworks/html';
+import framework from '@activewidgets/frameworks/js';
 import * as pkg from '@activewidgets/grid';
 
 const {build, tags, h} = framework(preact);

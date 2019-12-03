@@ -4,19 +4,19 @@ import babel from 'rollup-plugin-babel';
 
 let globals = {
     'preact': 'preact',
-    '@activewidgets/frameworks/html': 'ActiveWidgets.frameworks.html',
+    '@activewidgets/frameworks/js': 'ActiveWidgets.frameworks.js',
     '@activewidgets/grid': 'ActiveWidgets.components'
 };
 
 export default {
     input: 'index.js',
     output: [
-        {file: 'dist/ax-html.js', format: 'umd', sourcemap: true, name: 'ActiveWidgets.HTML', extend: true, globals},
-        {file: 'dist/ax-html.esm.js', format: 'esm', sourcemap: true}
+        {file: 'dist/ax-js.js', format: 'umd', sourcemap: true, name: 'ActiveWidgets.JS', extend: true, globals},
+        {file: 'dist/ax-js.esm.js', format: 'esm', sourcemap: true}
     ],
     external: [
         'preact',
-        '@activewidgets/frameworks/html',
+        '@activewidgets/frameworks/js',
         '@activewidgets/grid'
     ],
     plugins: [
