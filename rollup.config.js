@@ -13,10 +13,10 @@ let name = 'ActiveWidgets.JS',
 
 let globals = {
     'preact': 'preact',
-    '@activewidgets/frameworks/js': 'ActiveWidgets.frameworks.js',
-    '@activewidgets/datagrid/js': 'ActiveWidgets.components',
-    '@activewidgets/datagrid/style': 'ActiveWidgets.styles',
-    '@activewidgets/datagrid/metadata': 'ActiveWidgets.metadata',
+    '@activewidgets/frameworks/js': 'ActiveWidgets.Frameworks.JS',
+    '@activewidgets/datagrid/js': 'ActiveWidgets.Components',
+    '@activewidgets/datagrid/style': 'ActiveWidgets.Styles',
+    '@activewidgets/datagrid/metadata': 'ActiveWidgets.Metadata',
     '@activewidgets/datagrid/css': ''
 };
 
