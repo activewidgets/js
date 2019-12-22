@@ -1,9 +1,12 @@
 ﻿
 import * as components from '../';
 import * as pages from './index.js';
+import * as northwind from './northwind.js';
 
 
 let el = document.querySelector('#app>div'),
+    templates = {},
+    data = {northwind},
     lookup = {},
     links = [],
     key = 1,
@@ -49,7 +52,7 @@ function refresh(){
         mode = RegExp.$1;
 
     if (name && typeof lookup[name] == 'function') {
-        lookup[name]({render}, components, {});
+        lookup[name]({render}, components, templates, data);
     }
     else {
         index(name);
