@@ -1,6 +1,7 @@
 node_modules
 .cache
 dist
-out
+public
+test/diffs
 *.bat
 package-lock.json
