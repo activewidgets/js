@@ -12,6 +12,7 @@ let name = 'ActiveWidgets.JS',
 
 
 let globals = {
+    'htm': 'htm',
     'preact': 'preact',
     '@activewidgets/frameworks/js': 'ActiveWidgets.Frameworks.JS',
     '@activewidgets/datagrid/js': 'ActiveWidgets.Components',
