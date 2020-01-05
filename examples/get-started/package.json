@@ -1,0 +1,19 @@
+{
+  "name": "js-get-started",
+  "version": "1.0.0",
+  "description": "ActiveWidgets datagrid for JS",
+  "keywords": [],
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "@activewidgets/js": "0.0.8"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1"
+  },
+  "private": true
+}
