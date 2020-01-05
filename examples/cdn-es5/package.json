@@ -1,0 +1,14 @@
+{
+  "name": "js-cdn-es5",
+  "version": "1.0.0",
+  "description": "ActiveWidgets.JS from CDN",
+  "keywords": [],
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "devDependencies": {
+    "serve": "^11.2.0"
+  },
+  "private": true
+}
