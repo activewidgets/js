@@ -1,19 +1,16 @@
 
 import {getQueriesForElement} from '@testing-library/dom';
-import * as components from '@activewidgets/components';
+import {mount} from '@activewidgets/components';
 
-Object.keys(components).forEach(name => {
-    components[name].tag = 'ax-' + name.toLowerCase();
-});
+let refs = [];
 
-
-export function render(Component, props){
+export function render(component, props){
 
     let baseElement = document.body,
         container = baseElement.appendChild(document.createElement('div')),
-        el = container.appendChild(document.createElement(Component.tag));
+        el = container.appendChild(document.createElement(component));
 
-    components.mount(el, props);
+    refs.push(mount(el, props));
 
     return {
         container,
@@ -24,7 +21,8 @@ export function render(Component, props){
 
 
 export function cleanup(){
-    // ????
+    refs.forEach(r => r.destroy());
+    refs = [];
     document.body.innerHTML = '';
 };
 
