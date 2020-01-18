@@ -1,32 +1,31 @@
 
 import {getQueriesForElement} from '@testing-library/dom';
+import * as components from '@activewidgets/components';
 
-let mountedObjects = [];
+Object.keys(components).forEach(name => {
+    components[name].tag = 'ax-' + name.toLowerCase();
+});
 
 
 export function render(Component, props){
 
-    let obj = new Component(props),
-        baseElement = document.body,
+    let baseElement = document.body,
         container = baseElement.appendChild(document.createElement('div')),
-        el = container.appendChild(document.createElement('div'));
+        el = container.appendChild(document.createElement(Component.tag));
 
-    obj.mount(el);
-
-    mountedObjects.push(obj);
+    components.mount(el, props);
 
     return {
         container,
         baseElement,
-        unmount: () => obj.unmount(),
         ...getQueriesForElement(baseElement)
     }
 };
 
 
 export function cleanup(){
-    mountedObjects.forEach(obj => obj.unmount());
-    mountedObjects.splice(0);
+    // ????
+    document.body.innerHTML = '';
 };
 
 

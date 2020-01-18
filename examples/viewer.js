@@ -4,13 +4,18 @@ import * as pages from './index.js';
 import * as northwind from './northwind.js';
 
 
-let el = document.querySelector('#app>div'),
+let el = document.querySelector('#app'),
     templates = {},
     data = {northwind},
     lookup = {},
     links = [],
     key = 1,
     obj;
+
+
+Object.keys(components).forEach(name => {
+    components[name].tag = 'ax-' + name.toLowerCase();
+});
 
 
 function path(s){
@@ -35,14 +40,14 @@ function index(name){
 
 function render(Component, props){
 
-    if (obj) {
-        obj.unmount();
-    }
+    let target = document.createElement(Component.tag);
+
+    el.innerHTML = '';
+    el.appendChild(target);
 
     props.key = ++key;
 
-    obj = new Component(props);
-    obj.mount(el);
+    components.mount(target, props);
 }
 
 
