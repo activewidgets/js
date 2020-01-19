@@ -1,5 +1,5 @@
 ﻿
-import * as components from '../';
+import {mount} from '../';
 import * as pages from './index.js';
 import * as northwind from './northwind.js';
 
@@ -11,11 +11,6 @@ let el = document.querySelector('#app'),
     links = [],
     key = 1,
     obj;
-
-
-Object.keys(components).forEach(name => {
-    components[name].tag = 'ax-' + name.toLowerCase();
-});
 
 
 function path(s){
@@ -38,16 +33,16 @@ function index(name){
 }
 
 
-function render(Component, props){
+function render(component, props){
 
-    let target = document.createElement(Component.tag);
+    let target = document.createElement(component);
 
     el.innerHTML = '';
     el.appendChild(target);
 
     props.key = ++key;
 
-    components.mount(target, props);
+    mount(target, props);
 }
 
 
@@ -57,7 +52,7 @@ function refresh(){
         mode = RegExp.$1;
 
     if (name && typeof lookup[name] == 'function') {
-        lookup[name]({render}, components, templates, data);
+        lookup[name]({render}, templates, data);
     }
     else {
         index(name);
