@@ -1,16 +1,16 @@
 
 import {getQueriesForElement} from '@testing-library/dom';
-import {mount} from '@activewidgets/components';
+import {mount as _mount} from '@activewidgets/components';
 
 let refs = [];
 
-export function render(component, props){
+export function mount(component, props){
 
     let baseElement = document.body,
         container = baseElement.appendChild(document.createElement('div')),
         el = container.appendChild(document.createElement(component));
 
-    refs.push(mount(el, props));
+    refs.push(_mount(el, props));
 
     return {
         container,
