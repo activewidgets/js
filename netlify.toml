@@ -4,12 +4,6 @@
   command = "npm run output"
 
 [[redirects]]
-  from = "http://js.activewidgets.com/*"
-  to = "https://js.activewidgets.com/:splat"
-  status = 301
-  force = true
-    
-[[redirects]]
   from = "/examples/*"
   to = "/index.html"
   status = 200
