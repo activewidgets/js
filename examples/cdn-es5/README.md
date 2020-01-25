@@ -1,6 +1,3 @@
-[![ActiveWidgets](http://www.activewidgets.com/include/logo/aw-logo-40.png?activewidgets/js)](http://www.activewidgets.com/)
-
-## CDN links, ES5 code
 
 Loading ActiveWidgets from CDN, with _old style_ javascript...
 

@@ -1,5 +1,5 @@
 
-var columns = [
+window.columns = [
   { header: "Code", field: "CustomerID", width: 80, style: "background:#def", fixed: true },
   { header: "Company Name", field: "CompanyName", width: 160, fixed: true },
   { header: "Contact", field: "ContactName", width: 120 },
@@ -12,7 +12,7 @@ var columns = [
   { header: "Country", field: "Country", style: "background:#efe", fixed: true }
 ];
 
-var rows = [
+window.rows = [
   {
     CustomerID: "ALFKI",
     CompanyName: "Alfreds Futterkiste",

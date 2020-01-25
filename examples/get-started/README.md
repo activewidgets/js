@@ -1,6 +1,4 @@
-[![ActiveWidgets](http://www.activewidgets.com/include/logo/aw-logo-40.png?activewidgets/js)](http://www.activewidgets.com/)
 
-## Get Started
 
 A minimal example showing ActiveWidgets datagrid for JS
 
