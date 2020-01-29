@@ -1,8 +1,8 @@
 ﻿
 import {Viewer} from '@activewidgets/examples';
-import {mount as _mount} from '../../';
+import {mount as _mount} from '@activewidgets/js';
 import * as pages from './examples.js';
-import readme from '../README.md';
+import readme from '../demo/README.md';
 import logo from './js.svg';
 import pkg from '../../package.json';
 
