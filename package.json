@@ -16,6 +16,7 @@
     "build": "rimraf dist/* && rollup -c",
     "output": "npm run build && rimraf out/* && build-examples",
     "start": "serve-examples",
+    "jest": "jest",
     "test": "npm run output && jest"
   },
   "dependencies": {
