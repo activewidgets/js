@@ -8,15 +8,15 @@
   "module": "./dist/esm/package.js",
   "files": [
     "dist/*/*.*",
-    "**/package.json",
+    "*/package.json",
     "LICENSE",
     "README.md"
   ],
   "scripts": {
     "build": "rimraf dist/* && rollup -c",
     "output": "npm run build && rimraf out/* && build-examples",
+    "prepack": "npm run build && rimraf out/*",
     "start": "serve-examples",
-    "jest": "jest",
     "test": "npm run output && jest"
   },
   "dependencies": {
