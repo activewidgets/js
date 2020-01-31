@@ -33,6 +33,7 @@
     "@babel/core": "^7",
     "@babel/preset-env": "^7",
     "@rollup/plugin-node-resolve": "^6",
+    "marked": "^0.8",
     "postcss-import": "^12",
     "rimraf": "^3",
     "rollup": "^1.20",
