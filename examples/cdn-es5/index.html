@@ -2,22 +2,17 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <link href="styles.css" rel="stylesheet" />
+    <title>CDN (no build) - ActiveWidgets/JS</title>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=Promise"></script>
+
     <link href="https://cdn.activewidgets.com/js/3/ax.css" rel="stylesheet" />
     <script src="https://cdn.activewidgets.com/js/3/ax.js"></script>
-    <script src="data.js"></script>
+
+    <link href="src/styles.css" rel="stylesheet" />
 </head>
 <body>
-    <div id="app">Loading...</div>
-    <script>
-
-        var obj = new ActiveWidgets.JS.Datagrid({
-            columns: columns,
-            rows: rows
-        });
-
-        obj.mount("#app");
-
-    </script>
+    <ax-datagrid>Loading...</ax-datagrid>
+    <script src="src/index.js"></script>
 </body>
 </html>

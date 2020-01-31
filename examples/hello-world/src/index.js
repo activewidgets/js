@@ -1,5 +1,5 @@
 
-import { mount} from "@activewidgets/js";
+import { mount } from "@activewidgets/js";
 import './styles.css';
 
 
