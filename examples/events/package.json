@@ -9,8 +9,8 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "@activewidgets/examples": "0.0.5",
-    "@activewidgets/js": "0.0.10"
+    "@activewidgets/examples": "*",
+    "@activewidgets/js": "*"
   },
   "devDependencies": {
     "parcel-bundler": "^1"
