@@ -12,6 +12,7 @@
     "@activewidgets/js": "0.0.10"
   },
   "devDependencies": {
+    "@activewidgets/examples": "0.0.5",
     "parcel-bundler": "^1"
   },
   "private": true
