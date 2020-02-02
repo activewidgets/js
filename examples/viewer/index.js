@@ -1,4 +1,9 @@
-﻿
+﻿/**
+ * Copyright (c) ActiveWidgets SARL. All Rights Reserved.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
 import {Viewer} from '@activewidgets/examples';
 import {mount as _mount} from '@activewidgets/js';
 import * as pages from './examples.js';

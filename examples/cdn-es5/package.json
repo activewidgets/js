@@ -2,6 +2,7 @@
   "name": "js-cdn-es5",
   "version": "1.0.0",
   "description": "ActiveWidgets.JS from CDN",
+  "license": "MIT",
   "main": "src/index.js",
   "private": true
 }
