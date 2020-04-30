@@ -18,4 +18,4 @@ export const Local = {
 };
 
 
-
+export * from '@activewidgets/examples/shared';
