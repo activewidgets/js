@@ -15,5 +15,5 @@ mount('ax-datagrid', {columns, rows, onMouse});
 
 Read more:
 
-- [Get started](https://docs.activewidgets.com/guide/starting/js/#user-events)
+- [Javascript Datagrid - Get started](https://docs.activewidgets.com/guide/env/js/#user-events)
 - [API - mouse event](https://docs.activewidgets.com/api/datagrid/mouse-event/)

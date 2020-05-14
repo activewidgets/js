@@ -27,4 +27,4 @@ Thats all!
 
 Read more:
 
- - [Get started](https://docs.activewidgets.com/guide/starting/js/)
+ - [Javascript Datagrid - Get started](https://docs.activewidgets.com/guide/env/js/)
