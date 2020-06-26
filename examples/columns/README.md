@@ -25,10 +25,10 @@ const rows = northwind.customers;
 mount('ax-datagrid', {columns, rows});
 ```
 
-Assign an array of column descriptor objects to the [columns](https://docs.activewidgets.com/api/datagrid/columns/) property.
+Assign an array of column descriptor objects to the [columns](https://activewidgets.com/api/datagrid/columns/) property.
 
 Read more:
 
-- [Javascript Datagrid - Get started](https://docs.activewidgets.com/guide/env/js/#data-properties)
-- [API - columns](https://docs.activewidgets.com/api/datagrid/columns/)
-- [API - rows](https://docs.activewidgets.com/api/datagrid/rows/)
+- [Javascript Datagrid - Get started](https://activewidgets.com/guide/env/js/#data-properties)
+- [API - columns](https://activewidgets.com/api/datagrid/columns/)
+- [API - rows](https://activewidgets.com/api/datagrid/rows/)
