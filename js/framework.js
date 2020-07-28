@@ -5,8 +5,8 @@
  */
 
 import adapter from '@activewidgets/frameworks/js';
-import * as preact from 'preact';
+import {Component, cloneElement, createElement, isValidElement, render} from 'preact';
 import htm from 'htm';
 
-export const {h, build, mount} = adapter(preact);
+export const {h, build, mount} = adapter({Component, cloneElement, createElement, isValidElement, render});
 export const tpl = htm.bind(h);
