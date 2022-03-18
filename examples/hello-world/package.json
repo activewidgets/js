@@ -9,10 +9,15 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@activewidgets/js": "*"
+    "@activewidgets/js": "^3"
   },
   "devDependencies": {
     "vite": "^2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/activewidgets/js.git",
+    "directory": "examples/hello-world"
   },
   "private": true
 }

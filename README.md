@@ -53,7 +53,7 @@ const rows = [
 mount('ax-datagrid', { rows });
 ```
 
-[Live example](https://js.activewidgets.com/examples/local/hello-world/) | [Source on github](https://github.com/activewidgets/js/tree/master/examples/hello-world) | [Edit on Codesandbox](https://codesandbox.io/s/github/activewidgets/js/tree/master/examples/hello-world)
+[Live example](https://js.activewidgets.com/hello-world/) | [Source on github](https://github.com/activewidgets/js/tree/master/examples/hello-world) | [Edit on stackblitz](https://stackblitz.com/github/activewidgets/js/tree/master/examples/hello-world?file=src/index.js)
 
 ## CDN links
 
@@ -75,7 +75,7 @@ var rows = [
 mount('ax-datagrid', { rows: rows });
 ```
 
-[Live example](https://js.activewidgets.com/examples/local/cdn-es5/) | [Source on github](https://github.com/activewidgets/js/tree/master/examples/cdn-es5) | [Edit on Codesandbox](https://codesandbox.io/s/github/activewidgets/js/tree/master/examples/cdn-es5)
+[Live example](https://js.activewidgets.com/examples/local/cdn-es5/) | [Source on github](https://github.com/activewidgets/js/tree/master/examples/cdn-es5) | [Edit on stackblitz](https://stackblitz.com/github/activewidgets/js/tree/master/examples/cdn-es5)
 
 ## Mount function
 
@@ -132,7 +132,7 @@ const rows = northwind.customers;
 mount('ax-datagrid', { columns, rows });
 ```
 
-[Live example](https://js.activewidgets.com/examples/local/columns/) | [Source on github](https://github.com/activewidgets/js/tree/master/examples/columns) | [Edit on Codesandbox](https://codesandbox.io/s/github/activewidgets/js/tree/master/examples/columns)
+[Live example](https://js.activewidgets.com/columns/) | [Source on github](https://github.com/activewidgets/js/tree/master/examples/columns) | [Edit on stackblitz](https://stackblitz.com/github/activewidgets/js/tree/master/examples/columns?file=src/index.js)
 
 
 ## User events
@@ -148,7 +148,7 @@ function onMouse({ row }){
 mount('ax-datagrid', { onMouse, columns, rows }); // put event handlers together with props
 ```
 
-[Live example](https://js.activewidgets.com/examples/local/events/) | [Source on github](https://github.com/activewidgets/js/tree/master/examples/events) | [Edit on Codesandbox](https://codesandbox.io/s/github/activewidgets/js/tree/master/examples/events)
+[Live example](https://js.activewidgets.com/events/) | [Source on github](https://github.com/activewidgets/js/tree/master/examples/events) | [Edit on stackblitz](https://stackblitz.com/github/activewidgets/js/tree/master/examples/events?file=src/index.js)
 
 
 ## More info

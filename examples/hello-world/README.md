@@ -1,5 +1,5 @@
 
-[Open fullscreen](/hello-world/) | [Source on github](https://github.com/activewidgets/js/tree/master/examples/hello-world) | [Edit on Codesandbox](https://codesandbox.io/s/github/activewidgets/js/tree/master/examples/hello-world)
+[Open fullscreen](https://js.activewidgets.com/hello-world/) | [Source on github](https://github.com/activewidgets/js/tree/master/examples/hello-world) | [Edit on stackblitz](https://stackblitz.com/github/activewidgets/js/tree/master/examples/hello-world?file=src/index.js)
 
 This is a small example to get started with ActiveWidgets datagrid.
 
