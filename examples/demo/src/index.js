@@ -4,9 +4,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import { mount} from "@activewidgets/js";
+import { mount, tpl } from "@activewidgets/js";
 import { northwind } from '@activewidgets/examples/data';
-import * as templates from './templates';
+import * as flags from '@activewidgets/examples/flags';
 import options from './options';
 import './styles.css';
 
@@ -30,4 +30,28 @@ function calc(){
     };
 }
 
-mount('ax-datagrid', {columns, rows, calc, templates, options});
+mount('ax-datagrid', {columns, rows, calc, options}, {
+
+    company: ({data}) => tpl`<div>
+        <div class="bold blue">${data.customerID}</div>
+        <div class="small">${data.companyName}</div>
+    </div>`,
+    
+    contact: ({data}) => tpl`<div>
+        <div class="bold">${data.contactName}</div>
+        <div class="small">${data.contactTitle}</div>
+    </div>`,
+    
+    address: ({data}) => tpl`<div>
+        <div class="small">${data.address}</div>
+        <div class="small">${data.postalCode} <span>${data.city}</span></div>
+    </div>`,
+    
+    country: ({text}) => tpl`<div><img src=${flags[text]}/>${text}</div>`,
+    
+    phone: ({data}) => tpl`<div>
+        <div class="small phone">${data.phone}</div>
+        <div class="small fax">${data.fax}</div>
+    </div>`
+    
+});
