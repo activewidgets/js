@@ -6,7 +6,8 @@
 
 import adapter from '@activewidgets/frameworks/js';
 import {Component, cloneElement, createElement, isValidElement, createContext, render} from 'preact';
+import {Suspense, lazy} from 'preact/compat';
 import htm from 'htm';
 
-export const {h, build, mount} = adapter({Component, cloneElement, createElement, isValidElement, createContext, render});
+export const {h, build, mount} = adapter({Component, cloneElement, createElement, isValidElement, createContext, Suspense, lazy, render});
 export const tpl = htm.bind(h);
