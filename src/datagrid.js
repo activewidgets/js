@@ -4,5 +4,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-export * from './framework.js';
-export * from './datagrid.js';
+import {JSComponent} from './framework.js';
+import {Datagrid, Row, Cells} from '@activewidgets/datagrid';
+
+JSComponent(Datagrid);
+JSComponent(Row);
+JSComponent(Cells);
